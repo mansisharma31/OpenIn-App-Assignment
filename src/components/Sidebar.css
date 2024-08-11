@@ -1,0 +1,134 @@
+.sidebar{
+    background-color: var(--primary-bg-color);
+    color: var(--gray-text-color);
+}
+
+li{
+    width: 80px;
+    height: 22px;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.82px;
+    text-align: left;
+}
+
+/* #upload{
+    background-image: linear-gradient(#ACA9FFE8, #ACA9FF00);
+} */
+.logo {
+    display: flex; /* Align logo and name in a row */
+    align-items: center; /* Vertically center the content*/ 
+    justify-content: center;
+    background-color: #fff; /* Semi-transparent background */
+    padding: 15px; 
+    border-radius: 24px;
+    position: absolute;
+    top: 23px; 
+    left: 23px;  
+    width: Hug (151.31px)px;
+    height: Hug (61px)px;
+}
+.logo1{
+    width: 27.5px;
+    height: 27.5px;
+   /* Adjust size as needed */
+    margin-right: 10px; /* Space between logo and name */
+    
+  }
+  
+  /* Styling for the logo name */
+  .logo-name {
+    width: 68.82px;
+    height: 34.95px;
+    font-family: Montserrat;
+    font-size: 26.05px;
+    font-weight: 900 ;
+    line-height: 31.75px;
+    text-align: left;
+    color: var(--primary-text-color);
+  
+    /* margin-left: 10px; */
+  } 
+
+.main-heading{
+    font-family: Figtree;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--primary-text-color);
+}
+
+#upload{
+    font-family: Figtree;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+#browse{
+    color: var(--accent-color);
+    font-family: Figtree;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+#drop{
+    font-family: Figtree;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #999CA0;
+}
+
+/* Sidebar Styles */
+/* Media queries for small screens */
+.sidebar.collapsed {
+    width: 100px; /* Collapsed width */
+  }
+
+@media (max-width: 360px) {
+    .sidebar {
+      width: 100px; /* Width when collapsed */
+      position: fixed; /* Fix position on the left side of the screen */
+      top: 0;
+      left: 0;
+      height: 100vh; /* Full height */
+      z-index: 50; /* Ensure it's on top of other elements */
+    }
+  
+    .sidebar.collapsed {
+      width: 100px; /* Collapsed width for small screens */
+    }
+  
+    /* Adjust content margin to accommodate the sidebar */
+    .flex-grow {
+      margin-left: 100px; /* Push main content to the right when sidebar is expanded */
+    }
+  
+    /* Ensure the light-dark toggle is positioned correctly */
+    .light-dark {
+      bottom: 10px;
+      left: 10px;
+      position: fixed;
+      z-index: 50; /* Ensure it's on top of other elements */
+    }
+  }
+
+@media (max-width: 360px) and (max-height: 800px) {
+
+    .flex-grow {
+      overflow-y: auto; /* Add scroll if content overflows */
+      margin-left: 35px; 
+    }
+  
+    .main-heading {
+      font-size: 24px; /* Adjust font size for smaller screens */
+    }
+  
+    .p-4 {
+      padding: 1rem; /* Adjust padding for smaller screens */
+    }
+  }
+
